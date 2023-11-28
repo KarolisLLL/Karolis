@@ -1,0 +1,178 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #000000; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 10px; /* Padding around header content */
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Set a fixed width for the header */
+    height: 100%; /* Set height to 100% to cover the entire height of the viewport */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    z-index: 2; /* Set a higher z-index to bring the header in front */
+}
+
+/* Add custom styles for the list items */
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px; /* Adjust margin to make space on the left */
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 20px; /* Adjust spacing between list items */
+    list-style: none; /* Remove default list style */
+    position: relative;
+}
+
+/* Add styles for the ::before pseudo-element to display icons */
+.navbar ul li::before {
+    content: "\f2b8"; /* Unicode for the home icon (adjust for other icons) */
+    font-family: 'Font Awesome 5 Free'; /* Font family for Font Awesome */
+    font-weight: 900; /* Font weight for solid style icons */
+    font-size: 20px; /* Adjust the icon size as needed */
+    margin-right: 8px; /* Adjust the spacing between icon and text */
+    position: absolute;
+    left: -24px; /* Adjust the distance between the icon and the text */
+    color: #ccc; /* Light gray color for icons */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Navigation link styles */
+.navbar a {
+    color: #ccc; /* Light gray color for links */
+    text-decoration: none; /* Remove underlines from links */
+    font-family: 'Open Sans', sans-serif; /* Open Sans font */
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.navbar a:hover,
+.navbar ul li:hover::before {
+    color: #87CEEB; /* White color on hover */
+}
+
+/* Logo Styles */
+.logo {
+    width: 80px; /* Adjust the width of your profile picture */
+    height: 80px; /* Adjust the height of your profile picture */
+    border-radius: 50%; /* Make the profile picture circular */
+    margin-bottom: 10px; /* Add space below the logo */
+    border: 2px solid #ccc; /* Light gray border */
+    overflow: hidden;
+}
+
+/* Profile Info Styles */
+.profile-info {
+    margin-bottom: 20px; /* Add space below the profile information */
+}
+
+/* Social Links Styles */
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 30px; /* Increase spacing between social media icons */
+    overflow: hidden;
+    background-color: #fff; /* White background color */
+    border: 2px solid #ccc; /* Light gray border */
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-social-icon i {
+    color: #000; /* Black icon color */
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.profile-social-icon:hover {
+    background-color: #87CEEB; /* Light blue background color on hover */
+}
+
+
+/* Home Section Styles */
+#home {
+    background-image: url('assets/media/32.jpg');
+    background-size: cover;
+    background-position: top center; /* Adjusted background position */
+    background-attachment: fixed; /* Fixed background attachment */
+    height: 100vh; /* Set the height of the initial section to the viewport height */
+    position: relative;
+    margin-left: 200px; /* Adjust margin to make space for the fixed header */
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden; /* Hide potential overflow */
+}
+
+/* Section Styles */
+section {
+    margin-left: 220px; /* Adjust the margin to make space for the fixed header */
+    margin-top: 20px; /* Adjust margin to make space below the fixed header */
+    padding: 20px;
+    border: 5px solid #999;
+}
+
+/* Add a margin to the last section */
+#services {
+    margin-bottom: 50px; /* Adjust as needed to create space for the footer */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+        width: 100%; /* Adjust width to cover the full width of the viewport on smaller screens */
+    }
+    section {
+        margin-left: 0; /* Remove the left margin on smaller screens */
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #363636; /* Footer background color */
+    color: #fff; /* Footer text color */
+    text-align: center;
+    padding: 5px; /* Reduce padding for a smaller footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 210px; /* Set a fixed width for the footer */
+    z-index: 3; /* Set a higher z-index to ensure the footer appears on top */
+}
+
+.social-icon {
+    margin-right: 10px; /* Add space between social icons */
+}
+#contacts {
+    margin-left: 220px; /* Adjust the margin to make space for the fixed header */
+    margin-top: 20px; /* Adjust margin to make space below the fixed header */
+    padding: 20px;
+    border: 5px solid #999;
+}
