@@ -1,32 +1,29 @@
-/* Reset some default styles */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Header Styles */
 header {
     font-family: 'Arial', sans-serif;
     font-size: 20px;
     font-weight: normal;
-    background-color: #000000; /* Header background color */
-    color: #fff; /* Header text color */
-    padding: 10px; /* Padding around header content */
+    background-color: #000000;
+    color: #fff; 
+    padding: 10px; 
     text-align: center;
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px; /* Set a fixed width for the header */
-    height: 100%; /* Set height to 100% to cover the entire height of the viewport */
-    overflow-y: auto; /* Enable vertical scrolling if needed */
-    z-index: 2; /* Set a higher z-index to bring the header in front */
+    width: 250px; 
+    height: 100%; 
+    overflow-y: auto; 
+    z-index: 2; 
 }
 
-/* Add custom styles for the list items */
 .navbar {
     display: flex;
     align-items: flex-start;
-    margin-left: 20px; /* Adjust margin to make space on the left */
+    margin-left: 20px; 
 }
 
 .navbar ul {
@@ -35,66 +32,55 @@ header {
 }
 
 .navbar ul li {
-    margin-bottom: 20px; /* Adjust spacing between list items */
-    list-style: none; /* Remove default list style */
+    margin-bottom: 20px; 
+    list-style: none; 
     position: relative;
+    text-align: start;
 }
 
-/* Add styles for the ::before pseudo-element to display icons */
 .navbar ul li::before {
-    content: "\f2b8"; /* Unicode for the home icon (adjust for other icons) */
-    font-family: 'Font Awesome 5 Free'; /* Font family for Font Awesome */
-    font-weight: 900; /* Font weight for solid style icons */
-    font-size: 20px; /* Adjust the icon size as needed */
-    margin-right: 8px; /* Adjust the spacing between icon and text */
+    content: "\f2b8";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 8px; 
     position: absolute;
-    left: -24px; /* Adjust the distance between the icon and the text */
-    color: #ccc; /* Light gray color for icons */
-    transition: color 0.3s; /* Add transition for smooth color change */
+    left: -24px;
+    color: #ccc; 
+    transition: color 0.3s; 
 }
 
-/* Navigation link styles */
 .navbar a {
-    color: #ccc; /* Light gray color for links */
-    text-decoration: none; /* Remove underlines from links */
-    font-family: 'Open Sans', sans-serif; /* Open Sans font */
-    transition: color 0.3s; /* Add transition for smooth color change */
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif; 
+    transition: color 0.3s;
 }
 
 .navbar a:hover,
 .navbar ul li:hover::before {
-    color: #87CEEB; /* White color on hover */
+    color: #87CEEB; 
 }
 
-/* Logo Styles */
 .logo {
-    width: 80px; /* Adjust the width of your profile picture */
-    height: 80px; /* Adjust the height of your profile picture */
-    border-radius: 50%; /* Make the profile picture circular */
-    margin-bottom: 10px; /* Add space below the logo */
-    border: 2px solid #ccc; /* Light gray border */
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+    border: 5px solid #363636;
     overflow: hidden;
 }
 
-/* Profile Info Styles */
 .profile-info {
-    margin-bottom: 20px; /* Add space below the profile information */
-}
-
-/* Social Links Styles */
-.social-links {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 20px; 
 }
 
 .profile-social-icon {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
-    margin-right: 30px; /* Increase spacing between social media icons */
+    margin-right: 30px; 
     overflow: hidden;
-    background-color: #fff; /* White background color */
-    border: 2px solid #ccc; /* Light gray border */
+    background-color: #fff; /* Add a white background to the icons */
+    border: 2px solid #ccc; 
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
@@ -102,77 +88,77 @@ header {
 }
 
 .profile-social-icon i {
-    color: #000; /* Black icon color */
-    font-size: 20px;
-    line-height: 40px;
+    color: #000; /* Set the default icon color */
+    font-size: px;
+    line-height: 50px;
     text-align: center;
 }
 
 .profile-social-icon:hover {
-    background-color: #87CEEB; /* Light blue background color on hover */
+    background-color: #149ddd; /* Change the background color on hover */
 }
 
+.profile-social-icon:hover i {
+    color: #fff; /* Change the icon color on hover */
+}
 
-/* Home Section Styles */
 #home {
     background-image: url('assets/media/32.jpg');
     background-size: cover;
-    background-position: top center; /* Adjusted background position */
-    background-attachment: fixed; /* Fixed background attachment */
-    height: 100vh; /* Set the height of the initial section to the viewport height */
+    background-position: top center;
+    background-attachment:fixed; 
+    height: 100vh;
     position: relative;
-    margin-left: 200px; /* Adjust margin to make space for the fixed header */
+    margin-left: 200px; 
     margin: 0;
     padding: 0;
     border: none;
-    overflow: hidden; /* Hide potential overflow */
+    overflow: hidden;
 }
 
-/* Section Styles */
 section {
-    margin-left: 220px; /* Adjust the margin to make space for the fixed header */
-    margin-top: 20px; /* Adjust margin to make space below the fixed header */
+    font-family: sans-serif;
+    margin-left: 280px; 
+    margin-top: 20px; 
     padding: 20px;
-    border: 5px solid #999;
+    background-color: #e1f1f8;
 }
 
-/* Add a margin to the last section */
 #services {
-    margin-bottom: 50px; /* Adjust as needed to create space for the footer */
+    margin-bottom: 50px; 
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 600px) {
     header {
         font-size: 18px;
-        width: 100%; /* Adjust width to cover the full width of the viewport on smaller screens */
+        width: 100%; 
     }
     section {
-        margin-left: 0; /* Remove the left margin on smaller screens */
+        margin-left: 0; 
         margin-top: 10px;
         padding: 10px;
     }
 }
 
-/* Footer Styles */
 footer {
-    background-color: #363636; /* Footer background color */
-    color: #fff; /* Footer text color */
+    background-color: #363636; 
+    color: #fff; 
     text-align: center;
-    padding: 5px; /* Reduce padding for a smaller footer */
+    padding: 5px; 
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 210px; /* Set a fixed width for the footer */
-    z-index: 3; /* Set a higher z-index to ensure the footer appears on top */
+    width: 260px;
+    z-index: 3; 
 }
 
 .social-icon {
-    margin-right: 10px; /* Add space between social icons */
+    margin-right: 10px; 
 }
-#contacts {
-    margin-left: 220px; /* Adjust the margin to make space for the fixed header */
-    margin-top: 20px; /* Adjust margin to make space below the fixed header */
-    padding: 20px;
-    border: 5px solid #999;
+.moving-svg {
+    animation: moveFormula 3s infinite;
+}
+
+.math-formula-svg {
+    font-size: 10px;
 }
