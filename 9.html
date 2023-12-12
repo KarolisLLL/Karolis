@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://polyfill.io/v3/patched-mdn/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config"> </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</head>
 
 </head>
 
@@ -73,17 +79,103 @@
     <section id="services">
         <h2>Paslaugos</h2>
             <p>Galiu padėti su:</p>
-            <ul>
-                <li> </li>
-                <li> </li>
-                <li> </li>
-            </ul>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mi>f</mi>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mrow>
+                                <mn>2</mn>
+                                <mi>&pi;</mi>
+                                <mi>i</mi>
+                            </mrow>
+                        </mfrac>
+                        <mo>&#x222E;</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>z</mi>
+                                <mo>)</mo>
+                                <mi>d</mi>
+                                <mi>z</mi>
+                            </mrow>
+                            <mrow>
+                                <mi>z</mi>
+                                <mo>-</mo>
+                                <mi>a</mi>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" class="moving-svg math-formula-svg" style="animation: moveFormula 1s infinite;">
+                    <foreignObject x="2" y="2" width="380" height="600">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <mrow>
+                                <mi>f</mi>
+                                <mo>(</mo>
+                                <mi>a</mi>
+                                <mo>)</mo>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mrow>
+                                        <mn>2</mn>
+                                        <mi>&#960;</mi>
+                                        <mi>i</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mo>&#x222E;</mo>
+                                <mfrac>
+                                    <mi>f(z)</mi>
+                                    <mrow>
+                                        <mi>z</mi>
+                                        <mo>-</mo>
+                                        <mi>a</mi>
+                                    </mrow>
+                                </mfrac>
+                                <mi>dz</mi>
+                            </mrow>
+                        </math>
+                    </foreignObject>
+                </svg>
         </section>
         <section id="contacts">
             <h2>Kontaktai</h2>
             <p>Email: Karolislap193@gmail.com</p>
             <p>Phone: 12134564846</p>
             <p>Adresas: 13151g</p>
+
+            
+            <h2>Kontaktų <h2>Kontaktų forma</h2>
+
+            <form id="contactForm">
+              Vardas:<br>
+              <input type="text" id="name"><br>
+              Pavardė:<br>
+              <input type="text" id="surname"><br>
+              El. pašto adresas:<br>
+              <input type="email" id="email"><br>
+              Telefono numeris:<br>
+              <input type="tel" id="phone"><br>
+              Adresas:<br>
+              <input type="text" id="address"><br>
+              Pažymiai:<br>
+              <input type="number" id="mark1"><br>
+              <input type="number" id="mark2"><br>
+              <input type="number" id="mark3"><br>
+              <input type="number" id="mark4"><br>
+              <input type="number" id="mark5"><br>
+              <input type="button" value="Išsaugoti" onclick="saveData()">
+            </form>
+            
+            <p id="result"></p>
+            
+            <script src="contactForm.js"></script>
         </section>
     <footer>
         <div class="social-links">
@@ -92,8 +184,10 @@
             <a href="https://instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <p>Contact: Karolislap193@gmail.com</p>
-        <br>
+        
         <p>Website created by: Karolis Lapinskas</p>
+        <p id="clock"></p>
+    <script src="clock.js"></script>
     </footer>
 </body>
 
